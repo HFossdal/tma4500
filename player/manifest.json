@@ -1,0 +1,283 @@
+{
+  "clips": [
+    {
+      "clip_id": "4290_7622_000006_000005",
+      "tests": [
+        {
+          "test_name": "z1",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1/griffinlim_32.wav"
+            },
+            {
+              "model": "original",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1/original.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z1.5",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1.5/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1.5/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1.5/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/4290_7622_000006_000005/z1.5/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z2",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/4290_7622_000006_000005/z2/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/4290_7622_000006_000005/z2/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/4290_7622_000006_000005/z2/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/4290_7622_000006_000005/z2/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z3",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/4290_7622_000006_000005/z3/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/4290_7622_000006_000005/z3/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/4290_7622_000006_000005/z3/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/4290_7622_000006_000005/z3/stretchaware_teacher_mag.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clip_id": "p335_272_mic1",
+      "tests": [
+        {
+          "test_name": "z1",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/p335_272_mic1/z1/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/p335_272_mic1/z1/griffinlim_32.wav"
+            },
+            {
+              "model": "original",
+              "src": "../abtest_audio/p335_272_mic1/z1/original.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/p335_272_mic1/z1/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/p335_272_mic1/z1/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z1.5",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/p335_272_mic1/z1.5/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/p335_272_mic1/z1.5/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/p335_272_mic1/z1.5/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/p335_272_mic1/z1.5/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z2",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/p335_272_mic1/z2/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/p335_272_mic1/z2/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/p335_272_mic1/z2/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/p335_272_mic1/z2/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z3",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/p335_272_mic1/z3/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/p335_272_mic1/z3/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/p335_272_mic1/z3/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/p335_272_mic1/z3/stretchaware_teacher_mag.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clip_id": "rainbow_07_highpitch",
+      "tests": [
+        {
+          "test_name": "z1",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1/griffinlim_32.wav"
+            },
+            {
+              "model": "original",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1/original.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z1.5",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1.5/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1.5/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1.5/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/rainbow_07_highpitch/z1.5/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z2",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/rainbow_07_highpitch/z2/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/rainbow_07_highpitch/z2/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/rainbow_07_highpitch/z2/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/rainbow_07_highpitch/z2/stretchaware_teacher_mag.wav"
+            }
+          ]
+        },
+        {
+          "test_name": "z3",
+          "models": [
+            {
+              "model": "baseline",
+              "src": "../abtest_audio/rainbow_07_highpitch/z3/baseline.wav"
+            },
+            {
+              "model": "griffinlim_32",
+              "src": "../abtest_audio/rainbow_07_highpitch/z3/griffinlim_32.wav"
+            },
+            {
+              "model": "stretchaware_teacher",
+              "src": "../abtest_audio/rainbow_07_highpitch/z3/stretchaware_teacher.wav"
+            },
+            {
+              "model": "stretchaware_teacher_mag",
+              "src": "../abtest_audio/rainbow_07_highpitch/z3/stretchaware_teacher_mag.wav"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

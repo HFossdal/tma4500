@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Audio A/B tests</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 24px; max-width: 1100px; margin: 0 auto; }
+    h1 { margin-top: 0; }
+    details { margin: 14px 0; }
+    summary { cursor: pointer; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: middle; }
+    th { text-align: left; }
+    audio { width: 340px; }
+    .clip { margin-top: 28px; padding-top: 12px; border-top: 1px solid #eee; }
+    .muted { color: #666; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Audio A/B tests</h1>
+  <div class="muted">Auto-generated from <code>abtest_audio/</code></div>
+
+  <div id="app">Loading…</div>
+
+  <script>
+    async function main() {
+      const app = document.getElementById("app");
+      const resp = await fetch("./manifest.json");
+      if (!resp.ok) {
+        app.textContent = "Could not load manifest.json. Did you run the generator script and commit it?";
+        return;
+      }
+      const data = await resp.json();
+
+      app.innerHTML = "";
+
+      for (const clip of data.clips) {
+        const clipDiv = document.createElement("div");
+        clipDiv.className = "clip";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = clip.clip_id;
+        clipDiv.appendChild(h2);
+
+        for (const test of clip.tests) {
+          const details = document.createElement("details");
+          details.open = (test.test_name === "z1"); // open z1 by default (change if you want)
+
+          const summary = document.createElement("summary");
+          summary.innerHTML = `<strong>${test.test_name}</strong>`;
+          details.appendChild(summary);
+
+          const table = document.createElement("table");
+          table.innerHTML = `
+            <thead><tr><th style="width: 40%">model</th><th>play</th></tr></thead>
+            <tbody></tbody>
+          `;
+          const tbody = table.querySelector("tbody");
+
+          for (const m of test.models) {
+            const tr = document.createElement("tr");
+            const tdModel = document.createElement("td");
+            tdModel.textContent = m.model;
+
+            const tdAudio = document.createElement("td");
+            const audio = document.createElement("audio");
+            audio.controls = true;
+            audio.preload = "none";
+            audio.src = m.src; // already relative to this page
+            tdAudio.appendChild(audio);
+
+            tr.appendChild(tdModel);
+            tr.appendChild(tdAudio);
+            tbody.appendChild(tr);
+          }
+
+          details.appendChild(table);
+          clipDiv.appendChild(details);
+        }
+
+        app.appendChild(clipDiv);
+      }
+    }
+
+    main().catch(err => {
+      document.getElementById("app").textContent = "Error: " + err;
+    });
+  </script>
+</body>
+</html>
